@@ -1,0 +1,74 @@
+
+// preset colors
+$clr-latios: #0d7DBF;
+$clr-latias: #D41F33;
+$clr-mega-light:#A7A8D6;
+$clr-mega-dark: #8B86BE;
+
+$clr-bug: blue;
+$clr-dark: blue;
+$clr-dragon: blue;
+$clr-electric: blue;
+$clr-fairy: blue;
+$clr-fighting: blue;
+$clr-fire: blue;
+$clr-flying: blue;
+$clr-ghost: blue;
+$clr-grass: blue;
+$clr-ground: blue;
+$clr-ice: blue;
+$clr-normal: blue;
+$clr-poison: blue;
+$clr-psychic: blue;
+$clr-rock: blue;
+$clr-steel: blue;
+$clr-water: blue;
+
+$clr-pikachu:  yellow;
+$clr-gengar: purple;
+$clr-mimikyu: yellow;
+$clr-eevee: brown;
+$clr-mew: purple;
+
+
+$clr-primary: $clr-latios;
+$clr-secondary: $clr-latias;
+$clr-info: #58999c;
+$clr-success: #20bb66;
+$clr-warning: #ffb62f;
+$clr-danger: #ff0a00;
+
+
+$box-shadow:0 1px 3px rgba(0,0,0,.3);
+
+// 下滑
+@keyframes slide-down {
+  0%{
+    opacity: 0;
+    transform: translate(0,-100%)
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0,0)
+  }
+}
+// 淡入
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+// 上滑
+@keyframes slide-up {
+  0%{
+    opacity: 0;
+    transform: translateY(100%)
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0)
+  }
+}

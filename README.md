@@ -1,4 +1,24 @@
-# latios
+# Latios
+
+> A Vue UI components lib
+
+```bash
+npm install latios
+```
+
+## usage
+```javascript
+
+// global use
+import Vue from "vue";
+import Latios from "latios";
+Vue.use(Latios);
+
+
+// individual use
+
+
+```
 
 ## Project setup
 ```
