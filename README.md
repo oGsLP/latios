@@ -1,12 +1,14 @@
 <h1 align="center">Latios</h1>
 
+![npm][npm version url]
 [![Dependency Status][dependencies]][dependencies url]
 [![Build Status][travis build]][travis build url]
 [![Coverage Status][coveralls]][coveralls url]
 ![Snyk Vulnerabilities for GitHub Repo][vulnerabilities url]
 ![GitHub][github licence url]
 ![GitHub package.json dependency version (prod)][vue version url]
-![GitHub package.json dependency version (dev dep on branch)][vue-cli version url]
+
+
 
 ![GitHub last commit][last commit url]
 ![GitHub contributors][contributors url]
@@ -61,6 +63,7 @@ Vue.component('l-button',LButton); // as a component
 
 ## Project setup
 
+[npm version url]:https://img.shields.io/npm/v/latios.svg
 [dependencies]:https://david-dm.org/oGsLP/latios.svg?theme=shields.io
 [dependencies url]:https://david-dm.org/oGsLP/latios
 [travis build]:https://travis-ci.com/oGsLP/latios.svg?branch=master
@@ -72,7 +75,7 @@ Vue.component('l-button',LButton); // as a component
 [github licence url]:https://img.shields.io/github/license/oGsLP/latios.svg
 [package.json version url]:https://img.shields.io/github/package-json/v/oGsLP/latios.svg
 [vue version url]:https://img.shields.io/github/package-json/dependency-version/oGsLP/latios/vue.svg
-[vue-cli version url]:https://img.shields.io/github/package-json/dependency-version/oGsLP/latios/dev/@vue/cli-service.svg?label=%40vue%2Fcli
+
 
 [last commit url]:https://img.shields.io/github/last-commit/oGsLP/latios.svg
 [contributors url]:https://img.shields.io/github/contributors/oGsLP/latios.svg
