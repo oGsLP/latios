@@ -2,7 +2,7 @@ module.exports = {
   chainWebpack: config => {
     /* ... */
 
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV === "production") {
       if (process.env.npm_config_report) {
         config
           .plugin("webpack-bundle-analyzer")
@@ -18,6 +18,5 @@ module.exports = {
         data: `@import '@/assets/style/preset.scss';`
       }
     }
-  },
-  lintOnSave: false
-}
+  }
+};
