@@ -3,7 +3,7 @@
 $clr-latios: #0d7DBF;
 $clr-latias: #D41F33;
 $clr-mega-light:#A7A8D6;
-$clr-mega-dark: #8B86BE;
+$clr-mega-dark: #817cb3;
 
 $clr-bug: blue;
 $clr-dark: blue;
@@ -31,12 +31,24 @@ $clr-eevee: brown;
 $clr-mew: purple;
 
 
+$clr-bg: transparent;
+
 $clr-primary: $clr-latios;
 $clr-secondary: $clr-latias;
 $clr-info: #58999c;
 $clr-success: #20bb66;
 $clr-warning: #ffb62f;
 $clr-danger: #ff0a00;
+
+
+// preset size
+$sz-tiny: 10px;
+$sz-small: 14px;
+$sz-medium: 18px;
+$sz-big: 24px;
+$sz-large: 28px;
+$sz-immense: 36px;
+
 
 
 $box-shadow:0 1px 3px rgba(0,0,0,.3);
@@ -72,3 +84,5 @@ $box-shadow:0 1px 3px rgba(0,0,0,.3);
     transform: translateY(0)
   }
 }
+
+

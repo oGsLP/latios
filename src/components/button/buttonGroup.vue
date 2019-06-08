@@ -4,10 +4,8 @@
 
 <script>
 export default {
-  name: 'l-button-group'
-}
+  name: "l-button-group"
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

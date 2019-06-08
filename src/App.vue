@@ -1,14 +1,20 @@
 <template>
   <div>
-    <l-button>dsadasd</l-button>
-    <l-icon icon="pikachu" color="blue"></l-icon>
+    <l-button
+      icon="pokemon-ball"
+      :gap="true"
+      iconPosition="right"
+      poke="latios"
+      size="big"
+      >宝贝球</l-button
+    >
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>
 
 <style scoped></style>

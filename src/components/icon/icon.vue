@@ -10,16 +10,16 @@
 </template>
 
 <script>
-import './../../../public/svg'
+import "./../../../public/svg";
 export default {
-  name: 'l-icon',
-  props: ['icon', 'color', 'hoverColor'],
+  name: "l-icon",
+  props: ["icon", "color", "hoverColor"],
   methods: {
-    clickHandler () {
-      this.$emit('click')
+    clickHandler() {
+      this.$emit("click");
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

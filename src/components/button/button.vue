@@ -1,8 +1,11 @@
 <template>
-  <button class="l-button">
-    <l-icon :name="'pokemon-ball'" class="icon" color="black" ></l-icon>
-    <!--<l-icon v-if="icon && !loading" :name="'pokemon-ball'" class="icon"  ></l-icon>-->
-    <!--<l-icon v-if="loading" name="loading" class="icon loading"></l-icon>-->
+  <button
+    class="l-button"
+    :class="btnClass"
+    :style="{ color: theme, borderColor: theme, fontSize: fontSize }"
+  >
+    <l-icon v-if="icon" :icon="icon" class="icon"></l-icon>
+    <span v-if="needGap" class="gap" :style="{ backgroundColor: theme }"></span>
     <span class="button-content">
       <slot></slot>
     </span>
@@ -10,14 +13,13 @@
 </template>
 
 <script>
-import LIcon from './../icon'
+import preset from "./../../assets/style/preset";
+
 export default {
-  name: 'l-button',
-  comments: {
-    LIcon
-  },
+  name: "l-button",
+  components: { LIcon: () => import("./../icon/icon.vue") },
   props: {
-    disable: {
+    disabled: {
       type: Boolean,
       default: false
     },
@@ -27,31 +29,99 @@ export default {
     },
     iconPosition: {
       type: String,
-      default: 'left',
+      default: "left",
       validator: val => {
-        return val === 'left' || val === 'right'
+        return val === "left" || val === "right";
       }
+    },
+    gap: {
+      type: Boolean,
+      default: false
     },
     poke: {
       type: String,
-      default: 'transparent'
-    },
-    pressed: {
-      type: Boolean,
-      default: false
+      default: null
     },
     size: {
       type: String,
       default: null
     }
+  },
+  computed: {
+    needGap() {
+      return !!(this.gap && this.icon);
+    },
+    btnClass() {
+      let classList = [];
+      if (this.iconPosition) classList.push(`icon-${this.iconPosition}`);
+      if (this.disabled) classList.push(`button-disabled`);
+      return classList.join(" ");
+    },
+    theme() {
+      return preset.color[this.poke] || preset.color.default;
+    },
+    fontSize() {
+      return preset.size[this.size] || preset.size.default;
+    }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-  @import "../../assets/style/preset";
 .l-button {
+  padding: 0.15em 0.5em;
+  border: 2px solid;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  background: $clr-bg;
+  &:hover {
+    cursor: pointer;
+    background-color: $clr-mega-light;
+  }
+  &:active {
+    background-color: $clr-mega-dark;
+  }
+  &:focus {
+    outline: none;
+  }
+  &.button-disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    &:hover,
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  .icon {
+    margin: 0 0.2em;
+  }
+  &.icon-left {
+    > .icon {
+      order: 1;
+    }
+    > .button-content {
+      order: 3;
+    }
+  }
+  &.icon-right {
+    > .icon {
+      order: 3;
+    }
+    > .button-content {
+      order: 1;
+    }
+  }
   .button-content {
+    margin: 0 0.2em;
+  }
+  .gap {
+    width: 0.09em;
+    height: 0.9em;
+    margin: 0 0.3em;
+    order: 2;
   }
 }
 </style>
