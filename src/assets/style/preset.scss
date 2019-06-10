@@ -1,28 +1,29 @@
-
 // preset colors
 $clr-latios: #0d7DBF;
 $clr-latias: #D41F33;
+
+//
 $clr-mega-light:#A7A8D6;
 $clr-mega-dark: #817cb3;
 
-$clr-bug: blue;
-$clr-dark: blue;
-$clr-dragon: blue;
-$clr-electric: blue;
-$clr-fairy: blue;
-$clr-fighting: blue;
-$clr-fire: blue;
-$clr-flying: blue;
-$clr-ghost: blue;
-$clr-grass: blue;
-$clr-ground: blue;
-$clr-ice: blue;
-$clr-normal: blue;
-$clr-poison: blue;
-$clr-psychic: blue;
-$clr-rock: blue;
-$clr-steel: blue;
-$clr-water: blue;
+$clr-bug: #AABB22;
+$clr-dark: #775544;
+$clr-dragon: #7766EE;
+$clr-electric: #FFCC33;
+$clr-fairy: #FFAAFF;
+$clr-fighting: #BB5544;
+$clr-fire: #FF4422;
+$clr-flying: #6699FF;
+$clr-ghost: #6666BB;
+$clr-grass: #77CC55;
+$clr-ground: #DDBB55;
+$clr-ice: #77DDFF;
+$clr-normal: #BBBBAA;
+$clr-poison: #AA5599;
+$clr-psychic: #FF5599;
+$clr-rock: #BBAA66;
+$clr-steel: #AAAABB;
+$clr-water: #3399FF;
 
 $clr-pikachu:  yellow;
 $clr-gengar: purple;
@@ -40,6 +41,35 @@ $clr-success: #20bb66;
 $clr-warning: #ffb62f;
 $clr-danger: #ff0a00;
 
+// poke color collection
+$poke-clr-map: (
+  latios:$clr-latios,
+  latias:$clr-latias,
+  bug:$clr-bug,
+  dark:$clr-dark,
+  dragon:$clr-dragon,
+  electirc:$clr-electric,
+  fairy:$clr-fairy,
+  fighting:$clr-fighting,
+  fire:$clr-fire,
+  flying:$clr-flying,
+  ghost:$clr-ghost,
+  grass:$clr-grass,
+  ground:$clr-ground,
+  ice:$clr-ice,
+  normal:$clr-normal,
+  poison:$clr-poison,
+  psychic:$clr-psychic,
+  rock:$clr-rock,
+  steel:$clr-steel,
+  water:$clr-water,
+  primary:$clr-primary,
+  secondary:$clr-secondary,
+  info:$clr-info,
+  success:$clr-success,
+  waring:$clr-warning,
+  danger:$clr-danger
+);
 
 // preset size
 $sz-tiny: 10px;
@@ -51,7 +81,8 @@ $sz-immense: 36px;
 
 
 
-$box-shadow:0 1px 3px rgba(0,0,0,.3);
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+$box-shadow-shallow:  0 2px 12px 0 rgba(0, 0, 0, 0.1);
 
 // 下滑
 @keyframes slide-down {

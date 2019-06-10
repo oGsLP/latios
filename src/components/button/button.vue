@@ -1,9 +1,5 @@
 <template>
-  <button
-    class="l-button"
-    :class="btnClass"
-    :style="{ color: theme, borderColor: theme, fontSize: fontSize }"
-  >
+  <button class="l-button" :class="btnClass" :style="btnStyle">
     <l-icon v-if="icon" :icon="icon" class="icon"></l-icon>
     <span v-if="needGap" class="gap" :style="{ backgroundColor: theme }"></span>
     <span class="button-content">
@@ -55,7 +51,15 @@ export default {
       let classList = [];
       if (this.iconPosition) classList.push(`icon-${this.iconPosition}`);
       if (this.disabled) classList.push(`button-disabled`);
+      if (this.poke) classList.push(`button-${this.poke}`);
       return classList.join(" ");
+    },
+    btnStyle() {
+      return {
+        color: this.theme,
+        borderColor: this.theme,
+        fontSize: this.fontSize
+      };
     },
     theme() {
       return preset.color[this.poke] || preset.color.default;
@@ -68,6 +72,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "pokeStyle";
+
 .l-button {
   padding: 0.15em 0.5em;
   border: 2px solid;
@@ -77,16 +83,8 @@ export default {
   justify-content: center;
   vertical-align: middle;
   background: $clr-bg;
-  &:hover {
-    cursor: pointer;
-    background-color: $clr-mega-light;
-  }
-  &:active {
-    background-color: $clr-mega-dark;
-  }
-  &:focus {
-    outline: none;
-  }
+  transition: border 1s, background 0.8s;
+
   &.button-disabled {
     cursor: not-allowed;
     opacity: 0.7;
