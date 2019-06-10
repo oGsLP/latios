@@ -7,6 +7,7 @@ export * from "./plugins";
 // Export components individually
 export * from "./button";
 export * from "./icon";
+export * from "./list";
 // ....
 
 export const componentsPlugin = {
