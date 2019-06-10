@@ -43,6 +43,7 @@ $clr-danger: #ff0a00;
 
 // poke color collection
 $poke-clr-map: (
+  default: $clr-latios,
   latios:$clr-latios,
   latias:$clr-latias,
   bug:$clr-bug,

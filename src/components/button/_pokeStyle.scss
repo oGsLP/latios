@@ -3,12 +3,10 @@
 @each $poke,$clr in $poke-clr-map {
   .button-#{$poke} {
     &:focus{
-      box-shadow: 0 0 0 0.15em darken($clr, 15%);
-      outline: none;
-      border: 2px transparent solid !important;
+      box-shadow: 0 0 0 0.1em darken($clr, 15%);
     }
     &:active{
-      box-shadow: 0 0 0 0.15em darken($clr, 15%) !important;
+      box-shadow: 0 0 0 0.1em darken($clr, 15%) !important;
       transition: border 500ms;
     }
     &:hover{

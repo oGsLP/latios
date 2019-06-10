@@ -50,6 +50,8 @@ Vue.component('l-button',LButton); // as a component
   * button
     
     * l-button
+    
+    * l-button-group
   
   * icon
     

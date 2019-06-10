@@ -34,7 +34,6 @@ $br: 5px;
   vertical-align: middle;
   > .l-button {
     border-radius: 0;
-    border-width: 1px;
     &:not(:first-child) {
       margin-left: -2px;
     }

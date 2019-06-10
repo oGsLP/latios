@@ -36,7 +36,7 @@ export default {
     },
     poke: {
       type: String,
-      default: null
+      default: "default"
     },
     size: {
       type: String,
@@ -84,7 +84,10 @@ export default {
   vertical-align: middle;
   background: $clr-bg;
   transition: border 1s, background 0.8s;
-
+  &:focus {
+    outline: none;
+    border: 2px transparent solid !important;
+  }
   &.button-disabled {
     cursor: not-allowed;
     opacity: 0.7;
