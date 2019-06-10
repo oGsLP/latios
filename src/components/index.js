@@ -8,6 +8,7 @@ export * from "./plugins";
 export * from "./button";
 export * from "./icon";
 export * from "./list";
+export * from "./message";
 // ....
 
 export const componentsPlugin = {

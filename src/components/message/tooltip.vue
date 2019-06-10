@@ -1,10 +1,10 @@
 <template>
-  <li class="l-list-item"></li>
+  <div class="l-tooltip"></div>
 </template>
 
 <script>
 export default {
-  name: "l-list-item",
+  name: "l-tooltip",
   props: {},
   data() {
     return {};
@@ -14,6 +14,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.l-list-item {
+.tooltip {
 }
 </style>
