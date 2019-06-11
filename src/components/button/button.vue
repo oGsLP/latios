@@ -72,7 +72,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "pokeStyle";
+@import "buttonPokeStyle";
 
 .l-button {
   padding: 0.15em 0.5em;

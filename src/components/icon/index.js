@@ -1,12 +1,15 @@
 import LIcon from "./icon";
+import LIconButton from "./iconButton";
 
 import { installFactory } from "../../util/plugin";
 
 const components = {
-  LIcon
+  LIcon,
+  LIconButton,
+  LIconBtn: LIconButton
 };
 
-export { LIcon };
+export { LIcon, LIconButton };
 
 export default {
   install: installFactory({ components })
