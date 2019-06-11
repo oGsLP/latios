@@ -75,7 +75,7 @@ export default {
 @import "buttonPokeStyle";
 
 .l-button {
-  padding: 0.15em 0.5em;
+  padding: 0.2em 0.5em;
   border: 2px solid;
   border-radius: 5px;
   display: inline-flex;
@@ -84,6 +84,7 @@ export default {
   vertical-align: middle;
   background: $clr-bg;
   transition: border 1s, background 0.8s;
+  outline: none;
   &:focus {
     outline: none;
     border: 2px transparent solid !important;
