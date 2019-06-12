@@ -48,14 +48,13 @@ Vue.component('l-button',LButton); // as a component
 * components
   
   * button
-    
     * l-button
-    
     * l-button-group
-  
   * icon
-    
     * l-icon
+  * dropdown
+    * l-dropdown
+    * l-dropdown-item
 
 * directives
 

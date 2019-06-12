@@ -1,15 +1,15 @@
 @import "../../assets/style/preset";
 
-@each $poke,$clr in $poke-clr-map {
+@each $poke, $clr in $poke-clr-map {
   .button-#{$poke} {
-    &:focus{
+    &:focus {
       box-shadow: 0 0 0 0.1em darken($clr, 15%);
     }
-    &:active{
+    &:active {
       box-shadow: 0 0 0 0.1em darken($clr, 15%) !important;
       transition: border 500ms;
     }
-    &:hover{
+    &:hover {
       background: lighten($clr, 5%);
       color: white !important;
       opacity: 0.9;
@@ -20,78 +20,78 @@
   }
 }
 
-  //&.poke-latios, &.poke-primary {
-  //  @include poke-style($clr-latios);
-  //}
-  //&.poke-latias, &.poke-secondary {
-  //  @include poke-style($clr-latias);
-  //}
-  //&.poke-bug {
-  //  @include poke-style($clr-bug);
-  //}
-  //&.poke-dark {
-  //  @include poke-style($clr-dark);
-  //}
-  //&.poke-dragon {
-  //  @include poke-style($clr-dragon);
-  //}
-  //&.poke-electric {
-  //  @include poke-style($clr-electric);
-  //}
-  //&.poke-fairy {
-  //  @include poke-style($clr-fairy);
-  //}
-  //&.poke-fighting {
-  //  @include poke-style($clr-fighting);
-  //}
-  //&.poke-fire {
-  //  @include poke-style($clr-fire);
-  //}
-  //&.poke-flying {
-  //  @include poke-style($clr-flying);
-  //}
-  //&.poke-ghost {
-  //  @include poke-style($clr-ghost);
-  //}
-  //&.poke-grass {
-  //  @include poke-style($clr-grass);
-  //}
-  //&.poke-ground {
-  //  @include poke-style($clr-ground);
-  //}
-  //&.poke-ice {
-  //  @include poke-style($clr-ice);
-  //}
-  //&.poke-normal {
-  //  @include poke-style($clr-normal);
-  //}
-  //&.poke-poison {
-  //  @include poke-style($clr-poison);
-  //}
-  //&.poke-psychic {
-  //  @include poke-style($clr-psychic);
-  //}
-  //&.poke-rock {
-  //  @include poke-style($clr-rock);
-  //}
-  //&.poke-steel {
-  //  @include poke-style($clr-steel);
-  //}
-  //&.poke-water {
-  //  @include poke-style($clr-water);
-  //}
-  //&.poke-info {
-  //  @include poke-style($clr-info);
-  //}
-  //&.poke-success {
-  //  @include poke-style($clr-success);
-  //}
-  //&.poke-warning {
-  //  @include poke-style($clr-warning);
-  //}
-  //&.poke-danger {
-  //  @include poke-style($clr-danger);
-  //}
-  //
-  //
-  //
+//&.poke-latios, &.poke-primary {
+//  @include poke-style($clr-latios);
+//}
+//&.poke-latias, &.poke-secondary {
+//  @include poke-style($clr-latias);
+//}
+//&.poke-bug {
+//  @include poke-style($clr-bug);
+//}
+//&.poke-dark {
+//  @include poke-style($clr-dark);
+//}
+//&.poke-dragon {
+//  @include poke-style($clr-dragon);
+//}
+//&.poke-electric {
+//  @include poke-style($clr-electric);
+//}
+//&.poke-fairy {
+//  @include poke-style($clr-fairy);
+//}
+//&.poke-fighting {
+//  @include poke-style($clr-fighting);
+//}
+//&.poke-fire {
+//  @include poke-style($clr-fire);
+//}
+//&.poke-flying {
+//  @include poke-style($clr-flying);
+//}
+//&.poke-ghost {
+//  @include poke-style($clr-ghost);
+//}
+//&.poke-grass {
+//  @include poke-style($clr-grass);
+//}
+//&.poke-ground {
+//  @include poke-style($clr-ground);
+//}
+//&.poke-ice {
+//  @include poke-style($clr-ice);
+//}
+//&.poke-normal {
+//  @include poke-style($clr-normal);
+//}
+//&.poke-poison {
+//  @include poke-style($clr-poison);
+//}
+//&.poke-psychic {
+//  @include poke-style($clr-psychic);
+//}
+//&.poke-rock {
+//  @include poke-style($clr-rock);
+//}
+//&.poke-steel {
+//  @include poke-style($clr-steel);
+//}
+//&.poke-water {
+//  @include poke-style($clr-water);
+//}
+//&.poke-info {
+//  @include poke-style($clr-info);
+//}
+//&.poke-success {
+//  @include poke-style($clr-success);
+//}
+//&.poke-warning {
+//  @include poke-style($clr-warning);
+//}
+//&.poke-danger {
+//  @include poke-style($clr-danger);
+//}
+//
+//
+//

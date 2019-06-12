@@ -7,9 +7,9 @@ describe("#LButtonTest", () => {
     expect(LButton).to.be.ok;
   });
 
-  it("has default structure and classes", async ()=>{
+  it("has default structure and classes", async () => {
     const wrapper = shallowMount(LButton);
 
-    expect(wrapper.is('button')).to.be.true;
+    expect(wrapper.is("button")).to.be.true;
   });
 });

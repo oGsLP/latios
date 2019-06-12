@@ -1,5 +1,10 @@
 <template>
-  <button class="l-button" :class="btnClass" :style="btnStyle">
+  <button
+    class="l-button"
+    :class="btnClass"
+    :style="btnStyle"
+    @click="clickHandler"
+  >
     <l-icon v-if="icon" :icon="icon" class="icon"></l-icon>
     <span v-if="needGap" class="gap" :style="{ backgroundColor: theme }"></span>
     <span class="button-content">
@@ -66,6 +71,11 @@ export default {
     },
     fontSize() {
       return preset.size[this.size] || preset.size.default;
+    }
+  },
+  methods: {
+    clickHandler() {
+      this.$emit("click");
     }
   }
 };

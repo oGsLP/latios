@@ -1,0 +1,19 @@
+@import "../../assets/style/preset";
+
+@each $poke, $clr in $poke-clr-map {
+  .drop-#{$poke} {
+    > li {
+      &:active {
+        box-shadow: 0 0 0 0.1em darken($clr, 15%) !important;
+        transition: border 500ms;
+      }
+      &:hover {
+        background: lighten($clr, 5%);
+        color: white !important;
+        opacity: 0.9;
+        transition: background 500ms;
+        //box-shadow: 0 0 0 2px rgba(111, 111, 111, 0.4);
+      }
+    }
+  }
+}
