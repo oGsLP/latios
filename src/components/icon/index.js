@@ -1,5 +1,5 @@
 import LIcon from "./icon";
-import LIconButton from "./iconButton";
+import LIconButton from "./icon-button";
 
 import { installFactory } from "../../util/plugin";
 

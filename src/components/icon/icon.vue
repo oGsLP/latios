@@ -10,10 +10,23 @@
 </template>
 
 <script>
-import "./../../../public/svg";
+import("../../assets/icon");
 export default {
   name: "l-icon",
-  props: ["icon", "color", "hoverColor"],
+  props: {
+    icon: {
+      type: String,
+      required: true
+    },
+    color: {
+      type: String,
+      required: false
+    },
+    hoverColor: {
+      type: String,
+      required: false
+    }
+  },
   methods: {
     clickHandler() {
       this.$emit("click");

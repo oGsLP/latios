@@ -1,4 +1,4 @@
-import OurVue from './vue'
+import OurVue from "./vue";
 
 /**
  * Plugin install factory function.

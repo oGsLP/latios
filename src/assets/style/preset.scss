@@ -1,36 +1,35 @@
 // preset colors
-$clr-latios: #0d7DBF;
-$clr-latias: #D41F33;
+$clr-latios: #0d7dbf;
+$clr-latias: #d41f33;
 
 //
-$clr-mega-light:#A7A8D6;
+$clr-mega-light: #a7a8d6;
 $clr-mega-dark: #817cb3;
 
-$clr-bug: #AABB22;
+$clr-bug: #aabb22;
 $clr-dark: #775544;
-$clr-dragon: #7766EE;
-$clr-electric: #FFCC33;
-$clr-fairy: #FFAAFF;
-$clr-fighting: #BB5544;
-$clr-fire: #FF4422;
-$clr-flying: #6699FF;
-$clr-ghost: #6666BB;
-$clr-grass: #77CC55;
-$clr-ground: #DDBB55;
-$clr-ice: #77DDFF;
-$clr-normal: #BBBBAA;
-$clr-poison: #AA5599;
-$clr-psychic: #FF5599;
-$clr-rock: #BBAA66;
-$clr-steel: #AAAABB;
-$clr-water: #3399FF;
+$clr-dragon: #7766ee;
+$clr-electric: #ffcc33;
+$clr-fairy: #ffaaff;
+$clr-fighting: #bb5544;
+$clr-fire: #ff4422;
+$clr-flying: #6699ff;
+$clr-ghost: #6666bb;
+$clr-grass: #77cc55;
+$clr-ground: #ddbb55;
+$clr-ice: #77ddff;
+$clr-normal: #bbbbaa;
+$clr-poison: #aa5599;
+$clr-psychic: #ff5599;
+$clr-rock: #bbaa66;
+$clr-steel: #aaaabb;
+$clr-water: #3399ff;
 
-$clr-pikachu:  yellow;
+$clr-pikachu: yellow;
 $clr-gengar: purple;
 $clr-mimikyu: yellow;
 $clr-eevee: brown;
 $clr-mew: purple;
-
 
 $clr-bg: transparent;
 
@@ -44,32 +43,32 @@ $clr-danger: #ff0a00;
 // poke color collection
 $poke-clr-map: (
   default: $clr-latios,
-  latios:$clr-latios,
-  latias:$clr-latias,
-  bug:$clr-bug,
-  dark:$clr-dark,
-  dragon:$clr-dragon,
-  electirc:$clr-electric,
-  fairy:$clr-fairy,
-  fighting:$clr-fighting,
-  fire:$clr-fire,
-  flying:$clr-flying,
-  ghost:$clr-ghost,
-  grass:$clr-grass,
-  ground:$clr-ground,
-  ice:$clr-ice,
-  normal:$clr-normal,
-  poison:$clr-poison,
-  psychic:$clr-psychic,
-  rock:$clr-rock,
-  steel:$clr-steel,
-  water:$clr-water,
-  primary:$clr-primary,
-  secondary:$clr-secondary,
-  info:$clr-info,
-  success:$clr-success,
-  waring:$clr-warning,
-  danger:$clr-danger
+  latios: $clr-latios,
+  latias: $clr-latias,
+  bug: $clr-bug,
+  dark: $clr-dark,
+  dragon: $clr-dragon,
+  electirc: $clr-electric,
+  fairy: $clr-fairy,
+  fighting: $clr-fighting,
+  fire: $clr-fire,
+  flying: $clr-flying,
+  ghost: $clr-ghost,
+  grass: $clr-grass,
+  ground: $clr-ground,
+  ice: $clr-ice,
+  normal: $clr-normal,
+  poison: $clr-poison,
+  psychic: $clr-psychic,
+  rock: $clr-rock,
+  steel: $clr-steel,
+  water: $clr-water,
+  primary: $clr-primary,
+  secondary: $clr-secondary,
+  info: $clr-info,
+  success: $clr-success,
+  waring: $clr-warning,
+  danger: $clr-danger
 );
 
 // preset size
@@ -80,41 +79,37 @@ $sz-big: 24px;
 $sz-large: 28px;
 $sz-immense: 36px;
 
-
-
-$box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
-$box-shadow-shallow:  0 2px 12px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+$box-shadow-shallow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 
 // 下滑
 @keyframes slide-down {
-  0%{
+  0% {
     opacity: 0;
-    transform: translate(0,-100%)
+    transform: translate(0, -100%);
   }
-  100%{
+  100% {
     opacity: 1;
-    transform: translate(0,0)
+    transform: translate(0, 0);
   }
 }
 // 淡入
 @keyframes fade-in {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 // 上滑
 @keyframes slide-up {
-  0%{
+  0% {
     opacity: 0;
-    transform: translateY(100%)
+    transform: translateY(100%);
   }
-  100%{
+  100% {
     opacity: 1;
-    transform: translateY(0)
+    transform: translateY(0);
   }
 }
-
-

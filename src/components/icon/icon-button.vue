@@ -1,5 +1,5 @@
 <template>
-  <button v-if="!!icon" class="l-icon-button" :style="iconBtnStyle">
+  <button class="l-icon-button" :style="iconBtnStyle">
     <l-icon class="icon" :icon="icon"></l-icon>
   </button>
 </template>
@@ -18,7 +18,7 @@ export default {
     },
     icon: {
       type: String,
-      required: false
+      required: true
     },
     size: {
       type: String,

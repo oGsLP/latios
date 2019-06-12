@@ -1,5 +1,5 @@
 import LButton from "./button";
-import LButtonGroup from "./buttonGroup";
+import LButtonGroup from "./button-group";
 // Import others
 
 import { installFactory } from "../../util/plugin";

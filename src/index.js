@@ -20,7 +20,6 @@ const Latios = {
 
 // Named exports for BvConfigPlugin and BootstrapVue
 export {
-
   // Main Latios Plugin
   Latios,
   // Installer and setConfig exported in case the consumer does not

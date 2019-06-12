@@ -51,7 +51,7 @@ export default {
   components: {
     LButton,
     LIcon: () => import("./../icon/icon.vue"),
-    LButtonGroup: () => import("./../button/buttonGroup.vue")
+    LButtonGroup: () => import("../button/button-group.vue")
   },
   props: {
     poke: {
