@@ -1,4 +1,7 @@
 const path = require("path");
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
 module.exports = {
   chainWebpack: config => {
     config.module.rules.delete('svg'); // 重点:删除默认配置中处理svg,
