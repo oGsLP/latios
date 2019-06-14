@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import("../../assets/icon");
+import("./../../assets/icon/svg");
 export default {
   name: "l-icon",
   props: {
