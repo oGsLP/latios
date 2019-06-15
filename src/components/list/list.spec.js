@@ -9,7 +9,7 @@ describe("# LListTest", () => {
   it("- has default structure and classes", async () => {
     const wrapper = shallowMount(LList);
 
-    expect(wrapper.is("ul")).to.be.true;
+    expect(wrapper.is("div")).to.be.true;
   });
   // Todo: to add tests
 });

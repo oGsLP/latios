@@ -43,5 +43,5 @@ module.exports = {
     big: "24px",
     large: "28px",
     immense: "36px"
-  }
+  },
 };

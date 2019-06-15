@@ -9,7 +9,13 @@ describe("# LListItemTest", () => {
   it("- has default structure and classes", async () => {
     const wrapper = shallowMount(LListItem);
 
-    expect(wrapper.is("li")).to.be.true;
+    expect(wrapper.is("div")).to.be.true;
   });
+  // it("- as a button",async()=>{
+  //
+  // });
+  // it("- as a link",async()=>{
+  //
+  // });
   // Todo: to add tests
 });

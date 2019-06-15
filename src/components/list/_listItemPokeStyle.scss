@@ -1,0 +1,23 @@
+@import "../../assets/style/preset";
+
+@each $poke, $clr in $poke-clr-map {
+  .list-item-#{$poke} {
+    background: lighten($clr, 25%);
+    opacity: 0.7;
+    &:not(.list-item-div):focus {
+      box-shadow: 0 0 0 0.05em darken($clr, 15%);
+    }
+    &:not(.list-item-div):active {
+      box-shadow: 0 0 0 0.05em darken($clr, 15%) !important;
+      transition: border 500ms;
+    }
+    &:hover {
+      background: lighten($clr, 10%);
+      color: white !important;
+      opacity: 0.8;
+      transition: background 400ms;
+      cursor: pointer;
+      //box-shadow: 0 0 0 2px rgba(111, 111, 111, 0.4);
+    }
+  }
+}

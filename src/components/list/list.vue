@@ -26,34 +26,32 @@ export default {
   display: flex;
   border: 0;
   box-sizing: border-box;
-  font-size: $sz-medium;
-  line-height: $sz-medium * 1.5;
   max-width: 300px;
   &.list-dir-vertical {
     flex-direction: column;
-    > div:first-child {
+    > .l-list-item:first-child {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
     }
-    > div:last-child {
+    > .l-list-item:last-child {
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
     }
-    > div:not(:first-child) {
+    > .l-list-item:not(:first-child) {
       border-top: transparent;
     }
   }
   &.list-dir-horizontal {
     flex-direction: row;
-    > div:first-child {
+    > .l-list-item:first-child {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
     }
-    > div:last-child {
+    > .l-list-item:last-child {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
     }
-    > div:not(:first-child) {
+    > .l-list-item:not(:first-child) {
       border-left: transparent;
     }
   }
