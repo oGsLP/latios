@@ -10,6 +10,7 @@ export * from "./icon";
 export * from "./list";
 export * from "./message";
 export * from "./dropdown";
+export * from "./link";
 // ....
 
 export const componentsPlugin = {

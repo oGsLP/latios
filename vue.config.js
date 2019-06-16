@@ -20,7 +20,7 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        data: `@import '@/assets/style/preset.scss';`
+        data: `@import '@/assets/style/_preset.scss';`
       }
     }
   }

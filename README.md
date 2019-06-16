@@ -36,9 +36,9 @@ Vue.use(Latios);
 import { ButtonPlugin } from "latios";
 Vue.use(ButtonPlugin); // as a plugin
 
-import { LButton } from "latios";
+import { LButton, LButtonGroup } from "latios";
 Vue.component('l-button',LButton); // as a component
-
+Vue.component('l-button-group', LButtonGroup); // another component
 ```
 
 
@@ -52,17 +52,27 @@ Vue.component('l-button',LButton); // as a component
     * l-button-group
   * icon
     * l-icon
+    * l-icon-button
   * dropdown
     * l-dropdown
     * l-dropdown-item
+  * list
+    * l-list
+    * l-list-item
+  * link
+    * l-link
+    * l-breadcrumb
 
 * directives
-
-
 
 ---
 
 ## Project setup
+
+> To try our components now, git clone and use `npm run serve` and open your browser at "http://localhost:8080/" to view some examples in App.vue.
+
+> Our tutorial and site will be coming soon...
+
 
 [npm version url]:https://img.shields.io/npm/v/latios.svg
 [dependencies]:https://david-dm.org/oGsLP/latios.svg?theme=shields.io

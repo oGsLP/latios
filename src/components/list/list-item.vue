@@ -94,12 +94,7 @@ export default {
   &.list-item-div {
     cursor: default;
   }
-  &.list-item-a {
-    cursor: pointer;
-  }
   &.list-item-button {
-    cursor: pointer;
-    outline: none;
     font-family: inherit;
   }
 }

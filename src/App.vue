@@ -50,12 +50,63 @@
         >next</l-dropdown-item
       >
     </l-dropdown>
+    <l-list class="test">
+      <l-list-item button>
+        safasasda
+      </l-list-item>
+      <l-list-item poke="grass" href="#">
+        safasasda
+      </l-list-item>
+      <l-list-item poke="latias" href="#" button>
+        safasasda
+      </l-list-item>
+    </l-list>
+    <l-list horizontal class="test">
+      <l-list-item poke="dragon" active>
+        safasasda
+      </l-list-item>
+      <l-list-item poke="normal">
+        safasasda
+      </l-list-item>
+      <l-list-item poke="success">
+        safasasda
+      </l-list-item>
+    </l-list>
+
+    <l-breadcrumb class="test" :items="items"> </l-breadcrumb>
   </div>
 </template>
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  data() {
+    return {
+      items: [
+        {
+          text: "dasdsa",
+          href: "#",
+          poke: "latias",
+          active: true
+        },
+        {
+          text: "dasdsa",
+          poke: "latios",
+          disabled: true
+        },
+        {
+          text: "dasa",
+          poke: "ghost",
+          disabled: true
+        },
+        {
+          text: "dasdsauiiii",
+          poke: "dark",
+          disabled: true
+        }
+      ]
+    };
+  }
 };
 </script>
 
