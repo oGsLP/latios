@@ -17,5 +17,21 @@ describe("# LListItemTest", () => {
   // it("- as a link",async()=>{
   //
   // });
-  // Todo: to add tests
+  it("- test props", () => {
+    const wrapper = shallowMount(LListItem, {
+      propsData: {
+        poke: "ghost",
+        href: "#",
+        active:true
+      }
+    });
+    expect(wrapper.classes("list-item-ghost")).to.be.true;
+  });
+  it("- test clickHandler", async () => {
+    const wrapper = shallowMount(LListItem);
+
+    // Todo: add clickHandler
+
+    expect(wrapper.trigger("click"));
+  });
 });

@@ -12,9 +12,12 @@
 
 <script>
 import preset from "./../../assets/style/preset";
+import LButton from "../button/button";
 export default {
   name: "l-list-item",
-  components: { LButton: () => import("../button/button") },
+  components: {
+    LButton
+  },
   props: {
     button: {
       type: Boolean,

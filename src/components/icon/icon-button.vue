@@ -5,11 +5,12 @@
 </template>
 
 <script>
+import LIcon from "./icon.vue";
 import preset from "./../../assets/style/preset";
 export default {
   name: "l-icon-button",
   components: {
-    LIcon: () => import("./icon.vue")
+    LIcon
   },
   props: {
     poke: {

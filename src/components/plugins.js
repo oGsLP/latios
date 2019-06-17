@@ -6,3 +6,4 @@ export { default as ListPlugin } from "./list";
 export { default as MessagePlugin } from "./message";
 export { default as DropdownPlugin } from "./dropdown";
 export { default as LinkPlugin } from "./link";
+export { default as BadgePlugin } from "./badge";

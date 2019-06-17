@@ -10,6 +10,17 @@ describe("# LListTest", () => {
     const wrapper = shallowMount(LList);
 
     expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("list-dir-horizontal")).to.be.false;
+    expect(wrapper.classes("list-dir-vertical")).to.be.true;
   });
-  // Todo: to add tests
+  it("- test horizontal", () => {
+    const wrapper = shallowMount(LList, {
+      propsData: {
+        horizontal: true
+      }
+    });
+    expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("list-dir-horizontal")).to.be.true;
+    expect(wrapper.classes("list-dir-vertical")).to.be.false;
+  });
 });

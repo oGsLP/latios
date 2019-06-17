@@ -1,6 +1,6 @@
 {
   "name": "latios",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "main": "dist/latios.umd.min.js",
   "description": "An UI framework for Vue.js",

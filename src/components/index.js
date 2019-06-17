@@ -11,6 +11,7 @@ export * from "./list";
 export * from "./message";
 export * from "./dropdown";
 export * from "./link";
+export * from "./badge";
 // ....
 
 export const componentsPlugin = {

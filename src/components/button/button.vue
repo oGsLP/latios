@@ -15,10 +15,10 @@
 
 <script>
 import preset from "./../../assets/style/preset";
-
+import LIcon from "./../icon/icon.vue";
 export default {
   name: "l-button",
-  components: { LIcon: () => import("./../icon/icon.vue") },
+  components: { LIcon },
   props: {
     disabled: {
       type: Boolean,
@@ -26,7 +26,7 @@ export default {
     },
     icon: {
       type: String,
-      required: false
+      default: null
     },
     iconPosition: {
       type: String,

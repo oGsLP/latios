@@ -1,6 +1,7 @@
 import { expect } from "chai";
 import { shallowMount } from "@vue/test-utils";
 import LDropdown from "./dropdown";
+import LDropdownItem from "./dropdown-item";
 
 describe("# LDropdownTest", () => {
   it("+ exists l-dropdown component", () => {
@@ -11,5 +12,13 @@ describe("# LDropdownTest", () => {
 
     expect(wrapper.is("div")).to.be.true;
   });
-  // Todo: to add tests
+  it("- with l-dropdown-item", async () => {
+    const wrapper = shallowMount(LDropdown,{
+      slots:{
+        default: [LDropdownItem]
+      }
+    });
+
+    expect(wrapper.contains(LDropdownItem)).to.be.true;
+  });
 });

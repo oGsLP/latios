@@ -46,12 +46,14 @@
 
 <script>
 import LButton from "../button/button";
+import LIcon from "./../icon/icon.vue";
+import LButtonGroup from "../button/button-group.vue";
 export default {
   name: "l-dropdown",
   components: {
     LButton,
-    LIcon: () => import("./../icon/icon.vue"),
-    LButtonGroup: () => import("../button/button-group.vue")
+    LIcon,
+    LButtonGroup
   },
   props: {
     poke: {

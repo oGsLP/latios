@@ -11,10 +11,11 @@
 </template>
 
 <script>
+import LLink from "./link.vue";
 export default {
   name: "l-breadcrumb",
   components: {
-    LLink: () => import("./link.vue")
+    LLink
   },
   props: {
     items: {
