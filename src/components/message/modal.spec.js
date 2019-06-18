@@ -10,6 +10,7 @@ describe("# LModalTest", () => {
     const wrapper = shallowMount(LModal);
 
     expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("l-modal")).to.be.true;
   });
   // Todo: to add tests
 });

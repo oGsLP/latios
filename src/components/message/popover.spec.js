@@ -10,6 +10,7 @@ describe("# LPopoverTest", () => {
     const wrapper = shallowMount(LPopover);
 
     expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("l-popover")).to.be.true;
   });
   // Todo: to add tests
 });

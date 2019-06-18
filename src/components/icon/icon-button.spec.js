@@ -9,11 +9,13 @@ describe("# LIconButtonTest", () => {
   it("- has default structure and classes", async () => {
     const wrapper = shallowMount(LIconButton, {
       propsData: {
-        icon: "list"
+        icon: "list",
+        poke: "wrongPoke"
       }
     });
 
     expect(wrapper.is("button")).to.be.true;
+    expect(wrapper.classes("l-icon-button")).to.be.true;
   });
   // Todo: to add tests
 });

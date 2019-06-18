@@ -10,6 +10,7 @@ describe("# LTooltipTest", () => {
     const wrapper = shallowMount(LTooltip);
 
     expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("l-tooltip")).to.be.true;
   });
   // Todo: to add tests
 });

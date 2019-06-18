@@ -10,6 +10,7 @@ describe("# LToastTest", () => {
     const wrapper = shallowMount(LToast);
 
     expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("l-toast")).to.be.true;
   });
   // Todo: to add tests
 });

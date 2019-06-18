@@ -10,6 +10,7 @@ describe("# LListTest", () => {
     const wrapper = shallowMount(LList);
 
     expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("l-list")).to.be.true;
     expect(wrapper.classes("list-dir-horizontal")).to.be.false;
     expect(wrapper.classes("list-dir-vertical")).to.be.true;
   });
@@ -20,6 +21,7 @@ describe("# LListTest", () => {
       }
     });
     expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("l-list")).to.be.true;
     expect(wrapper.classes("list-dir-horizontal")).to.be.true;
     expect(wrapper.classes("list-dir-vertical")).to.be.false;
   });

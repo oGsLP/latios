@@ -10,12 +10,14 @@ describe("# LDropdownItemTest", () => {
     const wrapper = shallowMount(LDropdownItem);
 
     expect(wrapper.is("li")).to.be.true;
+    expect(wrapper.classes("l-dropdown-item")).to.be.true;
   });
   it("- test clickHandler", async ()=>{
     const wrapper = shallowMount(LDropdownItem);
 
+    expect(wrapper.is("li")).to.be.true;
+    expect(wrapper.classes("l-dropdown-item")).to.be.true;
     // Todo: add clickHandler
-
     expect(wrapper.trigger("click"));
   });
 });

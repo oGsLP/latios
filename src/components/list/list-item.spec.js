@@ -10,6 +10,7 @@ describe("# LListItemTest", () => {
     const wrapper = shallowMount(LListItem);
 
     expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("l-list-item")).to.be.true;
   });
   // it("- as a button",async()=>{
   //
@@ -25,6 +26,8 @@ describe("# LListItemTest", () => {
         active:true
       }
     });
+    expect(wrapper.is("a")).to.be.true;
+    expect(wrapper.classes("l-list-item")).to.be.true;
     expect(wrapper.classes("list-item-ghost")).to.be.true;
   });
   it("- test clickHandler", async () => {
@@ -32,6 +35,9 @@ describe("# LListItemTest", () => {
 
     // Todo: add clickHandler
 
+    expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("l-list-item")).to.be.true;
     expect(wrapper.trigger("click"));
+
   });
 });

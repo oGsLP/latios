@@ -30,6 +30,9 @@ describe("# LIconTest", () => {
     });
 
     expect(wrapper.is("svg")).to.be.true;
+    expect(wrapper.classes("l-icon")).to.be.true;
+
+    expect(wrapper.trigger("click"));
   });
   // Todo: to add tests
 });

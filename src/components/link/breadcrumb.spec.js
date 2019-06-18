@@ -34,6 +34,7 @@ describe("# LBreadcrumb", () => {
   it("- has default structure and classes", async () => {
     const wrapper = shallowMount(LBreadcrumb);
     expect(wrapper.is("span")).to.be.true;
+    expect(wrapper.classes("l-breadcrumb")).to.be.true;
   });
   it("- add some items", () => {
     const wrapper = shallowMount(LBreadcrumb, {
@@ -41,6 +42,9 @@ describe("# LBreadcrumb", () => {
         items: items
       }
     });
+
+    expect(wrapper.is("span")).to.be.true;
+    expect(wrapper.classes("l-breadcrumb")).to.be.true;
     expect(wrapper.contains(LLink)).to.be.true;
     expect(wrapper.findAll(LLink).length).to.equal(4);
   });

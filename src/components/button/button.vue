@@ -54,9 +54,9 @@ export default {
     },
     btnClass() {
       let classList = [];
-      if (this.iconPosition) classList.push(`icon-${this.iconPosition}`);
-      if (this.disabled) classList.push(`button-disabled`);
-      if (this.poke) classList.push(`button-${this.poke}`);
+      classList.push(`icon-${this.iconPosition}`);
+      classList.push(`button-disabled`);
+      classList.push(`button-${this.poke}`);
       return classList.join(" ");
     },
     btnStyle() {

@@ -11,6 +11,7 @@ describe("# LDropdownTest", () => {
     const wrapper = shallowMount(LDropdown);
 
     expect(wrapper.is("div")).to.be.true;
+    expect(wrapper.classes("l-dropdown")).to.be.true;
   });
   it("- with l-dropdown-item", async () => {
     const wrapper = shallowMount(LDropdown,{
@@ -20,5 +21,6 @@ describe("# LDropdownTest", () => {
     });
 
     expect(wrapper.contains(LDropdownItem)).to.be.true;
+    expect(wrapper.classes("l-dropdown")).to.be.true;
   });
 });
