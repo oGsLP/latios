@@ -74,6 +74,9 @@
     </l-list>
 
     <l-breadcrumb class="test" :items="items"> </l-breadcrumb>
+
+    <l-badge class="test">44</l-badge>
+    <l-badge pill class="test" poke="fairy">44</l-badge>
   </div>
 </template>
 

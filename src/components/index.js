@@ -12,6 +12,7 @@ export * from "./message";
 export * from "./dropdown";
 export * from "./link";
 export * from "./badge";
+export * from "./picker";
 // ....
 
 export const componentsPlugin = {
